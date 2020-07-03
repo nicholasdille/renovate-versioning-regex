@@ -5,7 +5,7 @@ ENV KUSTOMIZE_VERSION=kustomize/v3.7.0
 
 RUN unset GOPATH \
  && unset GO111MODULES \
- && git clone git@github.com:kubernetes-sigs/kustomize.git \
+ && git clone https://github.com/kubernetes-sigs/kustomize \
  && cd kustomize \
  && git checkout ${KUSTOMIZE_VERSION} \
  && (cd kustomize; go install .) \
